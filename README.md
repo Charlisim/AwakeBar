@@ -24,7 +24,7 @@ Keep a presentation visible, follow a recipe, monitor a long task, or read witho
 
 ## Screenshots
 
-Actual captures of the macOS app, not mockups.
+Captures of the macOS app, cleaned to remove the pointer and screen-sharing indicator.
 
 <p align="center"><img src="docs/images/about.png" width="380" alt="AwakeBar About window"> <img src="docs/images/custom-duration.png" width="290" alt="Custom duration dialog"></p>
 
