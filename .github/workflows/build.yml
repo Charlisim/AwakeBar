@@ -16,7 +16,7 @@ jobs:
         run: |
           plutil -lint dist/AwakeBar.app/Contents/Info.plist
           codesign --verify --strict dist/AwakeBar.app
-          lipo -verify_arch arm64 x86_64 dist/AwakeBar.app/Contents/MacOS/AwakeBar
+          lipo dist/AwakeBar.app/Contents/MacOS/AwakeBar -verify_arch arm64 x86_64
       - uses: actions/upload-artifact@v4
         with:
           name: AwakeBar-macos-universal

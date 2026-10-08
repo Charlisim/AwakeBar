@@ -4,6 +4,7 @@
 <p align="center">A small, native menu bar app for those moments when your Mac needs to stay awake.</p>
 <p align="center">
 <a href="https://github.com/Charlisim/AwakeBar/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Charlisim/AwakeBar?color=d69a42"></a>
+<a href="https://github.com/Charlisim/AwakeBar/actions/workflows/build.yml"><img alt="Build status" src="https://github.com/Charlisim/AwakeBar/actions/workflows/build.yml/badge.svg"></a>
 <img alt="macOS 14 and later" src="https://img.shields.io/badge/macOS-14%2B-333333">
 <img alt="Universal binary" src="https://img.shields.io/badge/architecture-universal-333333">
 <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-333333"></a>
