@@ -1,0 +1,25 @@
+name: Build macOS app
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build universal release
+        run: ./script/package.sh
+      - name: Validate bundle and architecture
+        run: |
+          plutil -lint dist/AwakeBar.app/Contents/Info.plist
+          codesign --verify --strict dist/AwakeBar.app
+          lipo -verify_arch arm64 x86_64 dist/AwakeBar.app/Contents/MacOS/AwakeBar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AwakeBar-macos-universal
+          path: |
+            dist/AwakeBar-1.0.0-macos-universal.zip
+            dist/SHA256SUMS

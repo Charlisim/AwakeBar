@@ -1,0 +1,12 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+Resources/icon-png/
+Resources/AppIcon.iconset/
+website/node_modules/
+website/.wrangler/
+website/.dev.vars*
+website/.env*
+
+.codex/

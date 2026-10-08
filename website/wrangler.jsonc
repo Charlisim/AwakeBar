@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "awakebar-site",
+  "compatibility_date": "2026-10-07",
+  "assets": {"directory": "./public"},
+  "routes": [{"pattern": "awakebar.csimon.dev", "custom_domain": true}],
+  "workers_dev": false
+}

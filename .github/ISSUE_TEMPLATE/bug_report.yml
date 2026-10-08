@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible problem
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS version, app version, Apple Silicon or Intel
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Relevant assertions or screenshots. Remove private information.
